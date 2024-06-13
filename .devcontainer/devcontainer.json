@@ -3,5 +3,22 @@
 	"features": {
 		"ghcr.io/devcontainers/features/azure-cli:1": {},
 		"ghcr.io/azure/azure-dev/azd:0": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.azure-account",
+				"ms-vscode.azurecli",
+				"ms-azuretools.vscode-azureappservice",
+				"ms-azuretools.azure-dev",
+				"ms-azuretools.vscode-azureresourcegroups",
+				"ms-azuretools.vscode-azurestorage",
+				"ms-vscode.vscode-node-azure-pack",
+				"ecmel.vscode-html-css",
+				"ms-python.vscode-pylance",
+				"ms-python.python",
+				"ms-python.debugpy"
+			]
+		}
 	}
 }
