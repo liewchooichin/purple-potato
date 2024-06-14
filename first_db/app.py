@@ -7,7 +7,10 @@
 #
 # Notes:
 # Need to install the Microsoft ODBC 18 from the codespaces. The changes is in the devcontainer.
-#
+# Steps:
+# uvicorn app:app --reload
+# On the Swagger UI page for the app http://127.0.0.1:8000/docs, expand the POST method and select Try it out.
+# You can also use try /redoc to see another form of generated documentation for the API. http://127.0.0.1:8000/redoc
 #
 #
 #
