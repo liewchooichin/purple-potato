@@ -8,7 +8,7 @@
 # master SQL_Latin1_General_CP1_CI_AS
 # sqllcc200 SQL_Latin1_General_CP1_CI_AS
 #
-
+# It is good to use conn.close().
 
 import os
 import pyodbc
