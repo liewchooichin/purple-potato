@@ -5,3 +5,14 @@ psycopg2-binary==2.9.9
 wheel==0.38.1
 whitenoise==6.6.0
 python-dotenv==1.0.1
+prospector==1.10.3
+asgiref==3.8.1
+django-browser-reload==1.12.1
+python-decouple==3.8
+sqlparse==0.5.0
+azure-identity
+pyodbc
+fastapi
+uvicorn[standard]
+pydantic
+azure-identity
