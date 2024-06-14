@@ -23,7 +23,8 @@ The startup file has only one line:
 
 ```gunicorn -w 4 -k uvicorn.workers.UvicornWorker app:app```
 
-Go to https://learn.microsoft.com/en-us/azure/developer/python/configure-python-web-app-on-app-service
+The startup file command can be entered into the Web App Configuration. Go to https://learn.microsoft.com/en-us/azure/developer/python/configure-python-web-app-on-app-service
+![startup command file](startup-file.png)
 
 ## webapp **config** set
 az webapp config set --resource-group DefaultResourceGroup-SEA --name blueberry201 --start-up start.shaz webapp config set --resource-group DefaultResourceGroup-SEA --name blueberry201 --start-up start.sh
