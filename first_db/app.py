@@ -31,7 +31,7 @@ class Person(BaseModel):
     last_name: Union[str, None] = None
 
 #connection_string = os.environ["AZURE_SQL_CONNECTIONSTRING"]
-connection_string = os.environ["SQLLCC200_CONNECTION"]
+connection_string = os.getenv("SQLLCC200_CONNECTION")
 
 app = FastAPI()
 
