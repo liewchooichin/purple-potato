@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/5c089937-bf38-4ebc-a4f9-93c84351a29d/resourceGroups/DefaultResourceGroup-SEA/providers/Microsoft.Web/sites/blueberry201",
+    "appService.deploySubpath": "azure-sql-db-django"
+}
