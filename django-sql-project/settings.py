@@ -12,7 +12,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 import os
 from pathlib import Path
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
+from decouple import config
 
 import mimetypes
 mimetypes.add_type("text/css", ".css", True)
@@ -27,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-r+$45&sm1im6(9a@dgmt7en0*v5w4p$j_$3+ohx!bay6pj%2d5'
+#SECRET_KEY = 'django-insecure-r+$45&sm1im6(9a@dgmt7en0*v5w4p$j_$3+ohx!bay6pj%2d5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -94,13 +95,13 @@ WSGI_APPLICATION = 'django-sql-project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'mssql',
-        'NAME': os.getenv("DB_NAME"),
-        'HOST': os.getenv("DB_SERVER"),
+        'NAME': os.getenv("SQL_NAME"),
+        'HOST': os.getenv("SQL_SERVER"),
         'PORT': '1433',
-        'USER': os.getenv("DB_USER"),
-        'PASSWORD': os.getenv("DB_PASSWORD"),
+        'USER': os.getenv("SQL_USER"),
+        'PASSWORD': os.getenv("SQL_PASSWORD"),
         'OPTIONS': {
-	            'driver': 'ODBC Driver 17 for SQL Server',
+	            'driver': 'ODBC Driver 18 for SQL Server',
 	        },
     }
 
