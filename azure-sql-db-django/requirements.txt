@@ -5,3 +5,4 @@ mssql-django==1.1.2
 pyodbc==4.0.32
 python-dotenv==0.19.2
 python-decouple==3.8
+uvicorn[standard]===0.30.1
