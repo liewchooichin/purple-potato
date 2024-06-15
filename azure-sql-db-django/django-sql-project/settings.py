@@ -28,16 +28,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-r+$45&sm1im6(9a@dgmt7en0*v5w4p$j_$3+ohx!bay6pj%2d5'
-#SECRET_KEY = config("SECRET_KEY", default="")
+#SECRET_KEY = 'django-insecure-r+$45&sm1im6(9a@dgmt7en0*v5w4p$j_$3+ohx!bay6pj%2d5'
+SECRET_KEY = config("SECRET_KEY", default="")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-#DEBUG = config("DEBUG", default=True)
+#DEBUG = True
+DEBUG = config("DEBUG", default=True)
 
 # SECURITY WARNING: In production, allow only those domains which you trust.
-ALLOWED_HOSTS = ['*']
-#ALLOWED_HOSTS = config("ALLOWED_HOSTS", default="").split(",")
+#ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = config("ALLOWED_HOSTS", default="").split(",")
 
 CSRF_TRUSTED_ORIGINS = ['https://*.azurewebsites.net']
 CORS_ALLOW_ALL_ORIGINS: True
@@ -117,7 +117,7 @@ DATABASES = {
     #     'PORT': '', 
     #     'Trusted_Connection': 'no', 
     #     'OPTIONS': { 
-    #         'driver': 'ODBC Driver 17 for SQL Server', 
+    #         'driver': 'ODBC Driver 18 for SQL Server', 
     #         'extra_params': "Authentication=ActiveDirectoryMsi;Encrypt=yes;TrustServerCertificate=no" }
     # }
 }
