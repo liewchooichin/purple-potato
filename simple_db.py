@@ -13,10 +13,10 @@
 import os
 import pyodbc
 
-server = 'sqllcc200.database.windows.net'
-database = 'sqllcc200'
-username = 'sqllcc200'
-password = os.getenv("SQLLCC200_PASSWORD")
+server = os.getenv("SQL_SERVER")
+database = os.getenv("SQL_NAME")
+username = os.getenv("SQL_USER")
+password = os.getenv("SQL_PASSWORD")
 driver= '{ODBC Driver 18 for SQL Server}'
 
 with pyodbc.connect('DRIVER='+driver+';SERVER=tcp:'+server+';PORT=1433;DATABASE='+database+';UID='+username+';PWD='+ password) as conn:

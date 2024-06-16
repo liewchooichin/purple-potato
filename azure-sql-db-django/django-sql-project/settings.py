@@ -39,7 +39,13 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 #ALLOWED_HOSTS = config("ALLOWED_HOSTS", default="").split(",")
 
-CSRF_TRUSTED_ORIGINS = ['https://*.azurewebsites.net']
+# For deployment
+#CSRF_TRUSTED_ORIGINS = ['https://*.azurewebsites.net']
+
+# Uvicorn has problem, so I add in the extra github.dev and localhost. 
+# Uvicorn need the localhost:8000
+# python manage.py runserver can work without the CSRF_TRUSTED_ORIGINS.
+CSRF_TRUSTED_ORIGINS = ['https://*.azurewebsites.net','http://localhost:8000']
 CORS_ALLOW_ALL_ORIGINS: True
 
 # Application definition
