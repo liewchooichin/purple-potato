@@ -19,6 +19,10 @@ Currently the decouple.config() is set to local development mode. When deploying
 Username: codespace
 Password: my gh
 
-## simple_db.py
+## `simple_db.py`
 
 This is a sample of connection to the SQL using pyodbc.
+
+## `DISABLE_COLLECTSTATIC`
+
+Currently, the Web App environment variable is set to `DISABLE_COLLECTATIC=false`. It may have to change depending on the situations.
